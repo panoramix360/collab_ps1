@@ -14,17 +14,21 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private GameObject container;
     [SerializeField] private GameObject coverPrefab;
+    [SerializeField] private GameObject overlay;
 
     [SerializeField] private float scrolledValueToChange = 0.02f;
 
     private float lastScrolledValueX = 0.5f;
+    private static Cover currentClickedCover;
     private static int currentMiddleCoverIndex;
+    private static GameObject overlayStatic;
 
     private int sideCoversCount;
     private List<string> files;
 
     private void Start()
     {
+        overlayStatic = overlay;
         sideCoversCount = (coversVisible - 1) / 2;
 
         string[] filesPng = Directory.GetFiles(Application.dataPath + "/Resources/Sprites", "*.png", SearchOption.TopDirectoryOnly);
@@ -240,5 +244,27 @@ public class GameController : MonoBehaviour
     public static int GetCurrentIndex()
     {
         return currentMiddleCoverIndex;
+    }
+
+    public static void ShowOverlay()
+    {
+        overlayStatic.gameObject.SetActive(true);
+    }
+
+    public static void HideOverlay()
+    {
+        overlayStatic.gameObject.SetActive(false);
+    }
+
+    public static void SetCurrentClickedCover(Cover cover)
+    {
+        currentClickedCover = cover;
+    }
+
+    public void OverlayClicked()
+    {
+        overlayStatic.gameObject.SetActive(false);
+        currentClickedCover.Close();
+        currentClickedCover = null;
     }
 }
