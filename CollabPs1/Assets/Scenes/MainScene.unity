@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 769456807}
   - component: {fileID: 769456810}
   - component: {fileID: 769456808}
+  - component: {fileID: 769456809}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -341,13 +342,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1745883931}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 0
   m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 0
+  m_DecelerationRate: 0.1
+  m_ScrollSensitivity: 1
   m_Viewport: {fileID: 1335743291}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -357,18 +358,21 @@ MonoBehaviour:
   m_VerticalScrollbarSpacing: -3
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1609417829}
-        m_MethodName: OnScrollChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &769456809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769456806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfca6d6404e72af43865883203533851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 1609417829}
+  stepValue: 0.0215
 --- !u!222 &769456810
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -685,7 +689,7 @@ MonoBehaviour:
   coverPrefab: {fileID: 3835854468673071292, guid: ceafc4622884e724485343923f77e709,
     type: 3}
   overlay: {fileID: 145672542}
-  scrolledValueToChange: 0.02
+  scrolledValueToChange: 0.01
 --- !u!4 &1609417830
 Transform:
   m_ObjectHideFlags: 0

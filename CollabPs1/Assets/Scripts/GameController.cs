@@ -137,69 +137,79 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void OnScrollChanged(Vector2 value)
+    public void LoadLeft()
     {
-        Debug.Log(value.x);
-        float valueAlreadyScrolled = lastScrolledValueX - value.x;
-        if (value.x != lastScrolledValueX && Mathf.Abs(valueAlreadyScrolled) > scrolledValueToChange)
-        {
-            lastScrolledValueX = value.x;
-            if (valueAlreadyScrolled > 0)
-            {
-                // left
-                ChangeToPreviousCover();
-                currentMiddleCoverIndex -= 1;
+        // left
+        ChangeToPreviousCover();
+        currentMiddleCoverIndex -= 1;
 
-                LoadCover(currentMiddleCoverIndex - sideCoversCount);
-            }
-            else
-            {
-                // right
-                ChangeToNextCover();
-                currentMiddleCoverIndex += 1;
+        LoadCover(currentMiddleCoverIndex - sideCoversCount);
+    }
 
-                LoadCover(currentMiddleCoverIndex + sideCoversCount, true);
-            }
-        }
+    public void LoadRight()
+    {
+        // right
+        ChangeToNextCover();
+        currentMiddleCoverIndex += 1;
+
+        LoadCover(currentMiddleCoverIndex + sideCoversCount, true);
     }
 
     private void ChangeToPreviousCover()
     {
-        string previousFilename = files[currentMiddleCoverIndex - 1];
+        int previousIndex = currentMiddleCoverIndex - 1;
+        int nextIndex = currentMiddleCoverIndex + 1;
+
+        previousIndex = Mathf.Max(previousIndex, 0);
+        nextIndex = Mathf.Min(nextIndex, files.Count - 1);
+
+        string previousFilename = files[previousIndex];
         string currentFilename = files[currentMiddleCoverIndex];
 
         GameObject previousCover = GameObject.Find(previousFilename);
         GameObject currentCover = GameObject.Find(currentFilename);
-        GameObject nextCover = GameObject.Find(files[currentMiddleCoverIndex + 1]);
-
+        GameObject nextCover = GameObject.Find(files[nextIndex]);
+            
         previousCover.GetComponent<Cover>().SetCoverName(previousFilename);
         currentCover.GetComponent<Cover>().SetCoverName("");
 
-        ChangeRotationAndOrder(currentCover, previousCover);
-        ChangeRotationAndOrder(nextCover, currentCover, defaultRotation);
+        ChangeRotationAndOrder(currentCover, previousCover, true);
+        ChangeRotationAndOrder(nextCover, currentCover, true, defaultRotation, -currentMiddleCoverIndex);
 
-        UnloadCover(currentCover.transform.parent.GetChild(currentCover.transform.GetSiblingIndex() + sideCoversCount).gameObject);
+        if (currentMiddleCoverIndex + sideCoversCount <= files.Count - 1)
+        {
+            UnloadCover(currentCover.transform.parent.GetChild(currentCover.transform.GetSiblingIndex() + sideCoversCount).gameObject);
+        }
     }
 
     private void ChangeToNextCover()
     {
-        string currentFilename = files[currentMiddleCoverIndex];
-        string nextFilename = files[currentMiddleCoverIndex + 1];
+        int previousIndex = currentMiddleCoverIndex - 1;
+        int nextIndex = currentMiddleCoverIndex + 1;
 
-        GameObject previousCover = GameObject.Find(files[currentMiddleCoverIndex - 1]);
+        previousIndex = Mathf.Max(previousIndex, 0);
+        nextIndex = Mathf.Min(nextIndex, files.Count - 1);
+
+        string currentFilename = files[currentMiddleCoverIndex];
+        string nextFilename = files[nextIndex];
+
+        GameObject previousCover = GameObject.Find(files[previousIndex]);
         GameObject currentCover = GameObject.Find(currentFilename);
         GameObject nextCover = GameObject.Find(nextFilename);
-
+        
         currentCover.GetComponent<Cover>().SetCoverName("");
         nextCover.GetComponent<Cover>().SetCoverName(nextFilename);
 
-        ChangeRotationAndOrder(currentCover, nextCover);
-        ChangeRotationAndOrder(previousCover, currentCover, -defaultRotation);
-
-        UnloadCover(currentCover.transform.parent.GetChild(currentCover.transform.GetSiblingIndex() - sideCoversCount).gameObject);
+        ChangeRotationAndOrder(currentCover, nextCover, true);
+        ChangeRotationAndOrder(previousCover, currentCover, false, -defaultRotation);
+        
+        if (currentMiddleCoverIndex - sideCoversCount >= 0)
+        {
+            UnloadCover(currentCover.transform.parent.GetChild(currentCover.transform.GetSiblingIndex() - sideCoversCount).gameObject);
+        }
     }
 
-    private void ChangeRotationAndOrder(GameObject coverOld, GameObject coverNew, float rotationY = 0)
+    private void ChangeRotationAndOrder(GameObject coverOld, GameObject coverNew, bool overrideSorting, float rotationY = 0, int sortingOrder = 0)
     {
         RectTransform rectTransformOld = coverOld.GetComponent<RectTransform>();
         RectTransform rectTransformNew = coverNew.GetComponent<RectTransform>();
@@ -209,8 +219,16 @@ public class GameController : MonoBehaviour
 
         Canvas canvasOld = coverOld.GetComponent<Canvas>();
         Canvas canvasNew = coverNew.GetComponent<Canvas>();
-        canvasNew.overrideSorting = canvasOld.overrideSorting;
-        canvasNew.sortingOrder = canvasOld.sortingOrder;
+        canvasNew.overrideSorting = overrideSorting;
+        if (sortingOrder != 0)
+        {
+            canvasNew.sortingOrder = sortingOrder;
+        }
+        else
+        {
+            canvasNew.sortingOrder = canvasOld.sortingOrder;
+        }
+        
     }
 
     private void UnloadCover(GameObject cover)
@@ -222,6 +240,8 @@ public class GameController : MonoBehaviour
 
     private void LoadCover(int coverIndexToLoad, bool overrideSorting = false)
     {
+        if (coverIndexToLoad < 0) return;
+        if (coverIndexToLoad > files.Count - 1) return;
         GameObject coverToLoad = container.transform.GetChild(coverIndexToLoad).gameObject;
 
         string filename = files[coverIndexToLoad];
