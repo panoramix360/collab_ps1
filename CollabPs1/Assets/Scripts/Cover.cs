@@ -48,10 +48,15 @@ public class Cover : MonoBehaviour
     public void PlayAnimation()
     {
         animator.SetBool("isClicked", true);
-    }
+    }   
 
     public void Close()
     {
         animator.SetBool("isClicked", false);
+    }
+
+    public bool IsIdle()
+    {
+        return animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("ZoomIn");
     }
 }

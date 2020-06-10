@@ -46,6 +46,20 @@ public class GameController : MonoBehaviour
         LoadFirstCovers();
     }
 
+    public bool IsCoverClicked()
+    {
+        return currentClickedCover != null;
+    }
+
+    public void ClickOnCurrentCover()
+    {
+        Cover cover = container.transform.GetChild(currentMiddleCoverIndex).GetComponent<Cover>();
+        if (cover.IsIdle())
+        {
+            cover.OnClick();
+        }
+    }
+
     private void AddFilenames(string[] arr)
     {
         foreach (string filePath in arr)

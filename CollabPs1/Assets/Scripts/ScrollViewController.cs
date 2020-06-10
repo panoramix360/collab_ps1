@@ -16,8 +16,18 @@ public class ScrollViewController : MonoBehaviour
 
     private void Update()
     {
+
         bool left = Input.GetKeyDown(KeyCode.LeftArrow);
         bool right = Input.GetKeyDown(KeyCode.RightArrow);
+        bool enter = Input.GetKeyDown(KeyCode.KeypadEnter);
+        bool space = Input.GetKeyDown(KeyCode.Space);
+
+        if (enter || space)
+        {
+            gameController.ClickOnCurrentCover();
+        }
+
+        if (gameController.IsCoverClicked()) return;
 
         if (left && scrollRect.horizontalNormalizedPosition > -0.04)
         {
