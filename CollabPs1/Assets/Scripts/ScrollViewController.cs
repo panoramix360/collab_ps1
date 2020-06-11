@@ -29,12 +29,22 @@ public class ScrollViewController : MonoBehaviour
 
         if (gameController.IsCoverClicked()) return;
 
+        GoToLeft(left);
+
+        GoToRight(right);
+    }
+
+    public void GoToLeft(bool left)
+    {
         if (left && scrollRect.horizontalNormalizedPosition > -0.04)
         {
             scrollRect.horizontalNormalizedPosition -= stepValue;
             gameController.LoadLeft();
         }
+    }
 
+    public void GoToRight(bool right)
+    {
         if (right && scrollRect.horizontalNormalizedPosition < 1.04)
         {
             scrollRect.horizontalNormalizedPosition += stepValue;
