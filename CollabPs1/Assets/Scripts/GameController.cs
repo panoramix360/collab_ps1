@@ -74,20 +74,22 @@ public class GameController : MonoBehaviour
     private void LoadFirstCovers()
     {
         int halfFilesSize = files.Count / 2;
-        currentMiddleCoverIndex = halfFilesSize;
+        currentMiddleCoverIndex = halfFilesSize - 1;
 
-        LoadLeftCovers(sideCoversCount, halfFilesSize - sideCoversCount);
+        LoadLeftCovers();
 
-        CreateCover(files[halfFilesSize], 0, coverWidth, 1000, files[halfFilesSize]);
+        CreateCover(files[currentMiddleCoverIndex], 0, coverWidth, 1000, files[currentMiddleCoverIndex]);
 
-        LoadRightCovers(sideCoversCount, halfFilesSize + 1);
+        LoadRightCovers();
     }
 
-    private void LoadLeftCovers(int count, int startIndexFile)
+    private void LoadLeftCovers()
     {
-        CreateEmptyCovers(-defaultRotation);
+        int coversToCreate = (files.Count - coversVisible) / 2;
+        CreateEmptyCovers(coversToCreate, -defaultRotation);
 
-        for (int i = 0; i < count; i++)
+        int startIndexFile = currentMiddleCoverIndex - sideCoversCount;
+        for (int i = 0; i < sideCoversCount; i++)
         {
             CreateCover(files[startIndexFile], -defaultRotation);
 
@@ -95,23 +97,26 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void LoadRightCovers(int count, int startIndexFile)
+    private void LoadRightCovers()
     {
-        int zIndex = count;
-        for (int i = 0; i < count; i++)
+        int startIndexFile = currentMiddleCoverIndex + 1;
+        for (int i = 0; i < sideCoversCount; i++)
         {
-            CreateCover(files[startIndexFile], defaultRotation, 0, zIndex);
+            CreateCover(files[startIndexFile], defaultRotation, 0, -startIndexFile);
 
             startIndexFile++;
-            zIndex--;
         }
 
-        CreateEmptyCovers(defaultRotation);
+        int coversToCreate = (files.Count - coversVisible) / 2;
+        CreateEmptyCovers(coversToCreate, defaultRotation);
+
+        int coversRemaining = (files.Count - coversVisible) % 2;
+        CreateEmptyCovers(coversRemaining, defaultRotation);
     }
 
-    private void CreateEmptyCovers(int rotationY)
+    private void CreateEmptyCovers(int coversToCreate, int rotationY)
     {
-        for (int i = 0; i < (files.Count - coversVisible) / 2; i++)
+        for (int i = 0; i < coversToCreate; i++)
         {
             GameObject empty = Instantiate(coverPrefab, container.transform) as GameObject;
             empty.GetComponent<Image>().color = new Color(0, 0, 0, 0);
@@ -137,7 +142,7 @@ public class GameController : MonoBehaviour
             rectTransform.sizeDelta = new Vector2(width, rectTransform.sizeDelta.y);
         }
 
-        if (zIndex > 0)
+        if (zIndex != 0)
         {
             Canvas canvas = cover.GetComponent<Canvas>();
             canvas.overrideSorting = true;
