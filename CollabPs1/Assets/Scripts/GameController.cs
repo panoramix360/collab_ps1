@@ -24,22 +24,80 @@ public class GameController : MonoBehaviour
     private static GameObject overlayStatic;
 
     private int sideCoversCount;
-    private List<string> files;
+    private List<string> files = new List<string>()
+    {
+        "@_fpjuni - Jackie Chan Stuntmaster",
+        "@anactrln - Pink Panther Pinkadelic Pursuit",
+        "@anarocha95 - Crash Bandicoot 3 Warped",
+        "@andyargollo - Dragon Ball GT Final Bout",
+        "@anselmecf - Yu Gi Oh Forbidden Memories_",
+        "@atanqi - Grand Theft Auto 2",
+        "@babzlullaby - Tomb Raider",
+        "@betotallyart - Pepsiman",
+        "@chatroleta - Digimon World 3",
+        "@cynthtnyc - PaRappa the Rapper",
+        "@danieldantedev - Sillent Hill",
+        "@DexDrakon - The Legend of Dragoon",
+        "@emanuel_rochart - Spyro",
+        "@Ezequimel - Test drive 6",
+        "@fitsfito - BloodyRoar II",
+        "@gabirotcho - SpiderMan",
+        "@giancarlozero - Final Fantasy VIII",
+        "@glaubits - Tobal No.1",
+        "@glaucio_sd - Final Fantasy Tactics",
+        "@hafu_ilustra - Peter Pan in Return to Neverland",
+        "@henryp39 - Darkstalkers",
+        "@HugoOak - Megaman X5",
+        "@jardellucas_art - Tony Hawk_s Pro Skater 4",
+        "@javanzord - Marvel vs Capcom",
+        "@jefferson83r - Chrono Cross",
+        "@Kisler_Art - Megaman x6",
+        "@krolkushi - Bust a Groove",
+        "@lailartsy - Tony Hawk_s Pro Skater",
+        "@lamascaradibuja - Capcom vs snk pro",
+        "@leobergamini - Ms. PacMan Maze Madness",
+        "@lipejcorrea - Klonoa  Door to Phantomile",
+        "@LUFEdraws - Winning Eleven 4",
+        "@meua_migo - Bomberman Fantasy Race",
+        "@mrhenrik_art - Resident Evil 3 Nemesis",
+        "@mthsmnds - Crash Bandicoot",
+        "@nicolas_almor - TEKKEN 3",
+        "@oivinnie - Tomb Raider Chronicles",
+        "@paulomoreria - Crash Team Racing",
+        "@pedrolheiro - Final Fantasy IX_",
+        "@radice - Harry Potter and The Philosopher_s Stone",
+        "@rafaelvic - Megaman X4",
+        "@rodrigopims - Dino Crisis",
+        "@ryansmallman - CROC  Legend of the Gobbos",
+        "@Sad_e_Lonely - Diablo",
+        "@saruzilla - Breath of Fire IV",
+        "@senhorluluba - Twisted Metal",
+        "@silvazuao - Metal Slug X",
+        "@soliva_joao - Brave Fencer Musashi",
+        "@tinzin_fofin - SPYRO Ripto_s Rage",
+        "@tosobreojardim - Medal of honor",
+        "@tucaas - Digimon World",
+        "@turboelson - Crash Bandicoot 2 Cortex Strikes Back",
+        "@VeridisCouraged - Final Fantasy VII",
+        "@victtorcom2t - 3Xtreme",
+        "@viniseeowls - Looney Tunes Sheep Raider",
+        "@vito_alvess - Soul Reaver"
+    };
 
     private void Start()
     {
         overlayStatic = overlay;
         sideCoversCount = (coversVisible - 1) / 2;
 
-        string[] filesPng = Directory.GetFiles(Application.dataPath + "/Resources/Sprites", "*.png", SearchOption.TopDirectoryOnly);
-        string[] filesJpg = Directory.GetFiles(Application.dataPath + "/Resources/Sprites", "*.jpg", SearchOption.TopDirectoryOnly);
-        string[] filesJpeg = Directory.GetFiles(Application.dataPath + "/Resources/Sprites", "*.jpeg", SearchOption.TopDirectoryOnly);
+        //string[] filesPng = Directory.GetFiles(Application.dataPath + "/Resources/Sprites", "*.png", SearchOption.TopDirectoryOnly);
+        //string[] filesJpg = Directory.GetFiles(Application.dataPath + "/Resources/Sprites", "*.jpg", SearchOption.TopDirectoryOnly);
+        //string[] filesJpeg = Directory.GetFiles(Application.dataPath + "/Resources/Sprites", "*.jpeg", SearchOption.TopDirectoryOnly);
 
-        files = new List<string>();
+        //files = new List<string>();
 
-        AddFilenames(filesPng);
-        AddFilenames(filesJpg);
-        AddFilenames(filesJpeg);
+        //AddFilenames(filesPng);
+        //AddFilenames(filesJpg);
+        //AddFilenames(filesJpeg);
 
         files = files.OrderBy(f => Guid.NewGuid()).ToList();
 

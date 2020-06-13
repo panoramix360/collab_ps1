@@ -1,0 +1,113 @@
+total 272004
+-rw-r--r-- 1 Pichau 197609  5058846 jun 11 22:05 @_fpjuni - Jackie Chan Stuntmaster.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @_fpjuni - Jackie Chan Stuntmaster.png.meta
+-rw-r--r-- 1 Pichau 197609   531983 jun 11 22:05 @anactrln - Pink Panther Pinkadelic Pursuit.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @anactrln - Pink Panther Pinkadelic Pursuit.png.meta
+-rw-r--r-- 1 Pichau 197609  9117633 jun 11 22:05 @anarocha95 - Crash Bandicoot 3 Warped.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @anarocha95 - Crash Bandicoot 3 Warped.png.meta
+-rw-r--r-- 1 Pichau 197609  3013325 jun 11 22:05 @andyargollo - Dragon Ball GT Final Bout.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @andyargollo - Dragon Ball GT Final Bout.png.meta
+-rw-r--r-- 1 Pichau 197609  4614858 jun 11 22:05 @anselmecf - Yu Gi Oh Forbidden Memories_.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @anselmecf - Yu Gi Oh Forbidden Memories_.png.meta
+-rw-r--r-- 1 Pichau 197609 12527580 jun 11 22:05 @atanqi - Grand Theft Auto 2.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @atanqi - Grand Theft Auto 2.png.meta
+-rw-r--r-- 1 Pichau 197609   375177 jun 11 22:05 @babzlullaby - Tomb Raider.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @babzlullaby - Tomb Raider.jpg.meta
+-rw-r--r-- 1 Pichau 197609  4221849 jun 11 22:05 @betotallyart - Pepsiman.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @betotallyart - Pepsiman.jpg.meta
+-rw-r--r-- 1 Pichau 197609  2205261 jun 11 22:05 @chatroleta - Digimon World 3.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @chatroleta - Digimon World 3.png.meta
+-rw-r--r-- 1 Pichau 197609  3156585 jun 11 22:05 @cynthtnyc - PaRappa the Rapper.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @cynthtnyc - PaRappa the Rapper.png.meta
+-rw-r--r-- 1 Pichau 197609  4964758 jun 11 22:05 @danieldantedev - Sillent Hill.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @danieldantedev - Sillent Hill.png.meta
+-rw-r--r-- 1 Pichau 197609  4235252 jun 11 22:05 @DexDrakon - The Legend of Dragoon.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @DexDrakon - The Legend of Dragoon.png.meta
+-rw-r--r-- 1 Pichau 197609   644147 jun 11 22:05 @emanuel_rochart - Spyro.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @emanuel_rochart - Spyro.jpg.meta
+-rw-r--r-- 1 Pichau 197609  1097937 jun 11 22:05 @Ezequimel - Test drive 6.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @Ezequimel - Test drive 6.jpg.meta
+-rw-r--r-- 1 Pichau 197609  5033281 jun 11 22:05 @fitsfito - BloodyRoar II.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @fitsfito - BloodyRoar II.png.meta
+-rw-r--r-- 1 Pichau 197609  8083530 jun 11 22:05 @gabirotcho - SpiderMan.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @gabirotcho - SpiderMan.png.meta
+-rw-r--r-- 1 Pichau 197609  1461148 jun 11 22:05 @giancarlozero - Final Fantasy VIII.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @giancarlozero - Final Fantasy VIII.jpg.meta
+-rw-r--r-- 1 Pichau 197609   335517 jun 11 22:05 @glaubits - Tobal No.1.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @glaubits - Tobal No.1.png.meta
+-rw-r--r-- 1 Pichau 197609 17373705 jun 11 22:05 @glaucio_sd - Final Fantasy Tactics.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @glaucio_sd - Final Fantasy Tactics.png.meta
+-rw-r--r-- 1 Pichau 197609  2126117 jun 11 22:05 @hafu_ilustra - Peter Pan in Return to Neverland.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @hafu_ilustra - Peter Pan in Return to Neverland.jpg.meta
+-rw-r--r-- 1 Pichau 197609  6564018 jun 11 22:05 @henryp39 - Darkstalkers.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @henryp39 - Darkstalkers.png.meta
+-rw-r--r-- 1 Pichau 197609  4400304 jun 11 22:05 @HugoOak - Megaman X5.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @HugoOak - Megaman X5.png.meta
+-rw-r--r-- 1 Pichau 197609 11598181 jun 11 22:05 @jardellucas_art - Tony Hawk_s Pro Skater 4.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @jardellucas_art - Tony Hawk_s Pro Skater 4.png.meta
+-rw-r--r-- 1 Pichau 197609  2179342 jun 11 22:05 @javanzord - Marvel vs Capcom.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @javanzord - Marvel vs Capcom.png.meta
+-rw-r--r-- 1 Pichau 197609  3040581 jun 11 22:05 @jefferson83r - Chrono Cross.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @jefferson83r - Chrono Cross.png.meta
+-rw-r--r-- 1 Pichau 197609   462081 jun 11 22:05 @Kisler_Art - Megaman x6.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @Kisler_Art - Megaman x6.jpg.meta
+-rw-r--r-- 1 Pichau 197609  4215374 jun 11 22:05 @krolkushi - Bust a Groove.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @krolkushi - Bust a Groove.jpg.meta
+-rw-r--r-- 1 Pichau 197609  6385549 jun 11 22:05 @lailartsy - Tony Hawk_s Pro Skater.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @lailartsy - Tony Hawk_s Pro Skater.png.meta
+-rw-r--r-- 1 Pichau 197609  2794903 jun 11 22:05 @lamascaradibuja - Capcom vs snk pro.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @lamascaradibuja - Capcom vs snk pro.png.meta
+-rw-r--r-- 1 Pichau 197609  2926073 jun 11 22:05 @leobergamini - Ms. PacMan Maze Madness.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @leobergamini - Ms. PacMan Maze Madness.png.meta
+-rw-r--r-- 1 Pichau 197609  2568497 jun 11 22:05 @lipejcorrea - Klonoa  Door to Phantomile.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @lipejcorrea - Klonoa  Door to Phantomile.png.meta
+-rw-r--r-- 1 Pichau 197609   268981 jun 11 22:05 @LUFEdraws - Winning Eleven 4.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @LUFEdraws - Winning Eleven 4.jpg.meta
+-rw-r--r-- 1 Pichau 197609   306821 jun 11 22:05 @meua_migo - Bomberman Fantasy Race.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @meua_migo - Bomberman Fantasy Race.png.meta
+-rw-r--r-- 1 Pichau 197609  3238422 jun 11 22:05 @mrhenrik_art - Resident Evil 3 Nemesis.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @mrhenrik_art - Resident Evil 3 Nemesis.png.meta
+-rw-r--r-- 1 Pichau 197609  3631255 jun 11 22:05 @mthsmnds - Crash Bandicoot.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @mthsmnds - Crash Bandicoot.png.meta
+-rw-r--r-- 1 Pichau 197609  3318293 jun 11 22:05 @nicolas_almor - TEKKEN 3.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @nicolas_almor - TEKKEN 3.png.meta
+-rw-r--r-- 1 Pichau 197609  5451467 jun 11 22:05 @oivinnie - Tomb Raider Chronicles.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @oivinnie - Tomb Raider Chronicles.png.meta
+-rw-r--r-- 1 Pichau 197609  5982833 jun 11 22:05 @paulomoreria - Crash Team Racing.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @paulomoreria - Crash Team Racing.png.meta
+-rw-r--r-- 1 Pichau 197609  4887185 jun 11 22:05 @pedrolheiro - Final Fantasy IX_.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @pedrolheiro - Final Fantasy IX_.png.meta
+-rw-r--r-- 1 Pichau 197609  1935825 jun 11 22:05 @radice - Harry Potter and The Philosopher_s Stone.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @radice - Harry Potter and The Philosopher_s Stone.jpg.meta
+-rw-r--r-- 1 Pichau 197609  6128943 jun 11 22:05 @rafaelvic - Megaman X4.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @rafaelvic - Megaman X4.png.meta
+-rw-r--r-- 1 Pichau 197609  1566311 jun 11 22:05 @rodrigopims - Dino Crisis.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @rodrigopims - Dino Crisis.png.meta
+-rw-r--r-- 1 Pichau 197609  7131350 jun 11 22:05 @ryansmallman - CROC  Legend of the Gobbos.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @ryansmallman - CROC  Legend of the Gobbos.png.meta
+-rw-r--r-- 1 Pichau 197609 13359024 jun 11 22:05 @Sad_e_Lonely - Diablo.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @Sad_e_Lonely - Diablo.jpg.meta
+-rw-r--r-- 1 Pichau 197609  3971847 jun 11 22:05 @saruzilla - Breath of Fire IV.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @saruzilla - Breath of Fire IV.jpg.meta
+-rw-r--r-- 1 Pichau 197609  1381333 jun 11 22:05 @senhorluluba - Twisted Metal.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @senhorluluba - Twisted Metal.jpg.meta
+-rw-r--r-- 1 Pichau 197609  1502439 jun 11 22:05 @silvazuao - Metal Slug X.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @silvazuao - Metal Slug X.png.meta
+-rw-r--r-- 1 Pichau 197609  7614996 jun 11 22:05 @soliva_joao - Brave Fencer Musashi.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @soliva_joao - Brave Fencer Musashi.png.meta
+-rw-r--r-- 1 Pichau 197609  3621790 jun 11 22:05 @tinzin_fofin - SPYRO Ripto_s Rage.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @tinzin_fofin - SPYRO Ripto_s Rage.png.meta
+-rw-r--r-- 1 Pichau 197609  8894386 jun 11 22:05 @tosobreojardim - Medal of honor.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @tosobreojardim - Medal of honor.png.meta
+-rw-r--r-- 1 Pichau 197609 14292682 jun 11 22:05 @tucaas - Digimon World.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @tucaas - Digimon World.png.meta
+-rw-r--r-- 1 Pichau 197609   373962 jun 11 22:05 @turboelson - Crash Bandicoot 2 Cortex Strikes Back.jpg
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @turboelson - Crash Bandicoot 2 Cortex Strikes Back.jpg.meta
+-rw-r--r-- 1 Pichau 197609 20457679 jun 13 15:50 @VeridisCouraged - Final Fantasy VII.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @VeridisCouraged - Final Fantasy VII.png.meta
+-rw-r--r-- 1 Pichau 197609  5315547 jun 11 22:05 @victtorcom2t - 3Xtreme.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @victtorcom2t - 3Xtreme.png.meta
+-rw-r--r-- 1 Pichau 197609  1067254 jun 11 22:05 @viniseeowls - Looney Tunes Sheep Raider.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @viniseeowls - Looney Tunes Sheep Raider.png.meta
+-rw-r--r-- 1 Pichau 197609 15172579 jun 11 22:05 @vito_alvess - Soul Reaver.png
+-rw-r--r-- 1 Pichau 197609     3067 jun 13 16:11 @vito_alvess - Soul Reaver.png.meta
