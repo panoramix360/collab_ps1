@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 1609417829}
-  stepValue: 0.0215
+  stepValue: 0.0202
 --- !u!222 &769456810
 CanvasRenderer:
   m_ObjectHideFlags: 0

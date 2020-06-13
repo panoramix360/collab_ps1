@@ -45,7 +45,7 @@ public class ScrollViewController : MonoBehaviour
 
     public void GoToRight(bool right)
     {
-        if (right && scrollRect.horizontalNormalizedPosition < 1.04)
+        if (right && scrollRect.horizontalNormalizedPosition < 1.06)
         {
             scrollRect.horizontalNormalizedPosition += stepValue;
             gameController.LoadRight();
