@@ -13,5 +13,7 @@ public class LoadVideo : MonoBehaviour
     {
         videoPlayer = GetComponent<VideoPlayer>();
         videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoName);
+        videoPlayer.Prepare();
+        videoPlayer.Play();
     }
 }
